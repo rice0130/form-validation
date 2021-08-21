@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+   
+</head>
+<body>
+
+    <!-- To create a travel reservation form -->
+    <div class="formcontainer">
+        <fieldset>
+            <legend class="title">Travel Reservation Form</legend>
+            <!--onSubmit: Execute function when a form is submitted:-->
+            <form onSubmit="event.preventDefault(); addForm();">
+                <label for="full_name">Full Name:*</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Please enter your name" required> <br /> 
+                <span id="nameErr"></span><br />
+
+                <label for="email">Enter your email:*</label>
+                <input type="email" id="email" name="email" required> <br />
+                <span id="emailErr"></span> <br />
+
+                <label for="tour_package">Select Tour Package*</label>
+                <select id="tour_package" name="tour_package">
+                    <option value="select">Select</option>
+                    <option value="japan">Japan</option>
+                    <option value="korea">Korea</option>
+                    <option value="hongkong">Hong Kong</option>
+                    <option value="taiwan">Taiwan</option>
+                </select>
+                
+                <br /> <br />
+                <label for="arrival_date">Arrival Date:*</label>
+                <input type="date" id="arrival_date" name="arrival_date" required> <br /> 
+                <span id='dateErr'></span><br />
+
+                <label for="num_pax">Number of person (1 to 8):*</label>
+                <input type="number" id="num_pax" name="num_pax" min="1" max="8" required> <br /> <br />
+                
+                <span class="title">What would you want to experience?*:</span> <br />
+                <div class="mycheckboxes">
+                    <input type="checkbox" id="c_food" name="experience" value="food">
+                    <label for="c_food">Food</label> <br />
+
+                    <input type="checkbox" id="c_sightseeing" name="experience" value="sightseeing">
+                    <label for="c_sightseeing">Sightseeing</label> <br />
+
+                    <input type="checkbox" id="c_culture" name="experience" value="culture">
+                    <label for="c_culture">Culture</label> <br /> <br />
+                </div>
+
+                <label for="discount">Discount Coupon Code:</label>
+                <input type="text" id="discount" name="discount">
+                <br /> 
+                <span id='discountErr'></span>
+                <br />
+
+                <span class="title">Terms and Conditions:*</span> <br />
+                <input type="radio" id="radio_agree" name="terms" value="agree" required>
+                <label for="radio_agree">Agree</label> <br />
+
+                <input type="radio" id="radio_disagree" name="terms" value="disagree">
+                <label for="radio_disagree">Disagree</label>
+
+                <br /> <br />
+                <button id="btn" type="submit">Complete Reservation</button>
+            </form>
+
+        </fieldset>
+    </div>
+    <!-- <script src="js/myScript.js"></script> -->
+
+    <script src="js/form_validation.js"></script>
+</body>
+</html>
