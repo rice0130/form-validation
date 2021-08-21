@@ -1,0 +1,94 @@
+   /* Comment here 
+(1) CSS using tag name
+*/
+body {
+    background-color:beige;
+}
+
+H3{
+    color: aqua;
+}
+
+/* (2) Using ID as the selector to style the tag */
+#firstp {
+    color: firebrick;
+}
+
+/* (3) Using class as the selctor to style to tag */
+.otherp {
+    color: green;
+}
+
+/*p {
+    color: red;
+}*/
+
+#productTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    #productTable td, #customers th {
+    border: 1px solid #ddd;
+    padding: 15px;
+    }
+    
+    #productTable tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #productTable tr:hover {background-color: #ddd;}
+    
+    #productTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+.formcontainer {
+    width: 1000px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+label, .title, button, input, select{
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+input:not([type=radio]):not([type=checkbox]), select {
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px 0;
+   
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=checkbox], input[type=radio] {
+    display: inline-block;
+}
+
+.mycheckboxes label {
+    display: inline-block;
+}
+
+button, #btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
